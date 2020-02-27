@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_weight="100">
+
+
+    <ScrollView
+        android:id="@+id/scrollViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+        <LinearLayout
+            android:id="@+id/chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/cameracat"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/camera_icon" />
+
+        <EditText
+            android:id="@+id/yourchat"
+            android:layout_width="203dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/emojiCat"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:background="@drawable/politecat"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/sendText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingVertical="15dp"
+            android:text="Send"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClickAfegir"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+</LinearLayout>
